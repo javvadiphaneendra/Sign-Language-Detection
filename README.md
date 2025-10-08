@@ -1,95 +1,128 @@
-# Realtime Sign Language Detection Using LSTM Model
+Realtime Sign Language Detection Using LSTM Model
 
-![Mediapipe Detection](https://github.com/AvhishekAdhikary/Realtime-Sign-Language-Detection-Using-LSTM-Model/assets/32614982/4d6a7542-2409-424f-9c9f-6b90a3236ea6)
+The Realtime Sign Language Detection Using LSTM Model is an AI-powered system developed by Phaneendra Javvadi that recognizes and interprets sign language gestures in real time. Using a Long Short-Term Memory (LSTM) neural network, it processes video input from a camera and accurately classifies gestures.
+
+The project aims to help individuals with hearing or speech impairments communicate more effectively by bridging the communication gap through deep learning and computer vision. It combines Python, TensorFlow, OpenCV, and Mediapipe to deliver fast, accurate, and reliable results.
+
+📑 Table of Contents
+
+About the Project
+
+Demo
+
+Features
+
+Getting Started
+
+Usage
+
+Contributing
+
+License
+
+Contact
+
+🧠 About the Project
+
+This project focuses on building a real-time gesture recognition system using deep learning.
+The LSTM model learns from sequences of key points (captured via Mediapipe) to classify hand signs accurately.
+It supports custom training, enabling users to expand the gesture dataset for new signs or languages.
+
+This system contributes toward making AI-driven assistive technologies more accessible to the deaf and hard-of-hearing community.
+
+The demo shows how the system captures real-time gestures and classifies them instantly using an LSTM neural network.
+
+⚙️ Features
+
+🖐️ Real-Time Detection: Recognizes sign gestures instantly from camera input.
+
+🤖 Deep Learning with LSTM: Uses temporal sequence learning for high-accuracy recognition.
+
+🌍 Multi-Language Support: Can be trained for sign gestures from various sign languages.
+
+🧩 Customizable Dataset: Users can add new gestures and retrain easily.
+
+🧠 Mediapipe Integration: Efficient hand landmark tracking with minimal computation.
+
+💬 Assistive Communication: Designed to enhance accessibility for hearing-impaired individuals.
+
+🖥️ User-Friendly Interface: Simple and interactive Jupyter-based UI.
+
+🔓 Open Source: Contributions and community improvements are welcome!
+
+🚀 Getting Started
+
+Follow these steps to set up the project on your system 👇
+
+🧩 Prerequisites
+
+Make sure you have the following installed:
+
+Python
+
+TensorFlow
+
+OpenCV
+
+NumPy
+
+Mediapipe
+
+⚙️ Installation
+
+1️⃣ Clone the repository:
+
+git clone https://github.com/PhaneendraJavvadi/Realtime-Sign-Language-Detection-Using-LSTM-Model.git
+cd Realtime-Sign-Language-Detection-Using-LSTM-Model
 
 
-> The Realtime Sign Language Detection Using LSTM Model is a deep learning-based project that aims to recognize and interpret sign language gestures in real-time. It utilizes a Long Short-Term Memory (LSTM) neural network architecture to learn and classify sign language gestures captured from a video feed. The project provides a user-friendly interface where users can perform sign language gestures in front of a camera, and the system will instantly detect and interpret the gestures. This can be used as an assistive technology for individuals with hearing impairments to communicate effectively. Key features of the project include real-time gesture detection, high accuracy in recognition, and the ability to add and train new sign language gestures. The system is built using Python, TensorFlow, OpenCV, and Numpy, making it accessible and easy to customize. With the Realtime Sign Language Detection Using LSTM Model, we aim to bridge the communication gap and empower individuals with hearing impairments
+2️⃣ Install required dependencies:
+
+pip install -r requirements.txt
 
 
-## Table of Contents
+(If you don’t have a requirements file, you can manually install:)
 
-- [About the Project](#about-the-project)
-- [Demo](#demo)
-- [Features](#features)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
-
-## About the Project
-
-This section provides an overview of the Realtime Sign Language Detection Using LSTM Model project. It describes the project's purpose, which is to develop a system that can accurately detect and interpret sign language gestures in real time. It also highlights the use of LSTM (Long Short-Term Memory) models for this task and emphasizes the project's significance in improving communication accessibility for the deaf and hard of hearing community.
-
-## Demo
-
-This section showcases a demonstration of the Realtime Sign Language Detection Using LSTM Model project.
+pip install tensorflow opencv-python mediapipe numpy notebook
 
 
-https://github.com/AvhishekAdhikary/Realtime-Sign-Language-Detection-Using-LSTM-Model/assets/32614982/16bd1d47-cc3f-488c-8d0e-e400004dc716
+3️⃣ Run the notebook:
+
+jupyter notebook
 
 
-The demo allows viewers to see how the system accurately interprets sign language gestures and provides real-time results.
+Then open and run all the cells in RealTimeSignLanguageDetection.ipynb.
 
-## Features
+🧪 Usage
 
-![model h5](https://github.com/AvhishekAdhikary/Realtime-Sign-Language-Detection-Using-LSTM-Model/assets/32614982/ece8ef5e-295c-4cfd-beb5-255ea88c8b76)
+Launch the notebook.
 
+Run all cells to start the detection model.
 
-- Real-time sign language detection: The system can detect and interpret sign language gestures in real time, providing immediate results.
-- High accuracy: The LSTM (Long Short-Term Memory) model used in the project ensures accurate recognition of a wide range of sign language gestures.
-- Multi-gesture support: The system can recognize and interpret various sign language gestures, allowing for effective communication.
-- Easy integration: The project provides code snippets and examples for seamless integration into other applications or projects.
-- Accessibility improvement: The Realtime Sign Language Detection Using LSTM Model project contributes to enhancing communication accessibility for the deaf and hard of hearing community.
-- Customization options: The system supports customization of gestures, allowing users to adapt it to their specific needs.
-- Language flexibility: The model can be trained to recognize sign language gestures from different languages, making it adaptable to various communication contexts.
-- User-friendly interface: The project includes a user-friendly interface that simplifies the interaction with the system, ensuring a smooth user experience.
-- Open-source: The Realtime Sign Language Detection Using LSTM Model is an open-source project, encouraging contributions and fostering collaboration in the development community.
+Show your hand gestures in front of the webcam.
 
-![Neural Network](https://github.com/AvhishekAdhikary/Realtime-Sign-Language-Detection-Using-LSTM-Model/assets/32614982/2adabb2c-db8e-47a3-a7ae-f2ce7175cc82)
+The system will detect and display the recognized sign in real time.
 
+🤝 Contributing
 
-## Getting Started
+Contributions are welcome!
+If you’d like to improve performance, add new gestures, or fix bugs:
 
-To get started with the Realtime Sign Language Detection Using LSTM Model, follow these steps:
+Fork the repository
 
-### Prerequisites
+Create a new branch (feature-name)
 
-- Python
-- TensorFlow
-- OpenCV
-- Numpy
+Commit your changes
 
-### Installation
+Submit a pull request
 
-1. Clone the repository:
+📜 License
 
-```shell
-git clone https://github.com/AvhishekAdhikary/Realtime-Sign-Language-Detection-Using-LSTM-Model.git
-```
-2. Install Dependencies:
+This project is licensed under the MIT License — you are free to use, modify, and distribute it with proper attribution.
 
-  ```shell
-  pip install notebook
-  ```
-3. Run Jupyter Notebook:
+📬 Contact
 
-  ```shell
-  jupyter notebook
-  ```
+👤 Phaneendra Javvadi
+📧 Email: javvadiphani71805@gmail.com
 
-## Usage
-
-Simply run all the cells inside the 'RealTimeSignLanguageDetection.ipynb' file.
-
-## Contributing
-
-Contributions are welcome! If you have any ideas, suggestions, or bug fixes, please open an issue or submit a pull request.
-
-## License
-
-This section states that the Realtime Sign Language Detection Using LSTM Model project is released under the MIT License. It briefly describes the terms and conditions of the license, such as the permission to use, modify, and distribute the project, with appropriate attribution. It provides a link to the full text of the MIT License for further reference.
-
-## Contact
-
-For any questions or inquiries, feel free to contact me at avhishe.adhikary11@gmail.com.
+🌐 GitHub: PhaneendraJavvadi
